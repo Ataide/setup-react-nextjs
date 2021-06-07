@@ -4,7 +4,6 @@ const theme = {
     text: '#e1e1e6',
     primary: 'tomato'
   }
-
 }
 
 export default theme

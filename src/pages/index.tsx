@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { GetStaticProps } from 'next'
 import { Container } from '../styles/pages/home'
+import logo from '../assets/logo.svg'
 
 type Props = {
   title: string
@@ -20,6 +21,8 @@ const Home: React.FC<Props> = (props) => {
       </Head>
       <Container>
       <main>
+        <img src={logo} width="200" alt="" />
+
         <h1>{props.title}</h1>
         <h3>{props.description}</h3>
         <p>Made with 💖 - <strong>{props.author}</strong></p>
